@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+
+    <link rel="stylesheet" href="master.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="timer-body">
+        <div id="timer-clock">
+            <p id="timer-clock-value">000:00:00:00:000</p>
+        </div>
+        <div id="timer-control">
+            <button id="SPR" state="start" class="timer-btn" onclick="timerToggle('start')"><p>Start</p></button>
+            <div id="spacer"></div>
+            <button id="SR" state="reset" class="timer-btn" onclick="timerToggle('stop')" disabled><p>Reset</p></button>
+            <!--<button class="timer-btn"><p>Tap</p></button>-->
+        </div>
+    </div>
+</body>
+</html>

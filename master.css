@@ -1,0 +1,87 @@
+@font-face
+{
+    font-family: Share_Tech_Mono;
+    src: url(fonts/ShareTechMono-Regular.ttf);
+}
+
+body
+{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#timer-body
+{
+    display: grid;
+    
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%;
+
+    justify-items: center;
+    
+    font-size: 10em;
+    font-family: Share_Tech_Mono;
+}
+
+#timer-clock
+{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    height: 100%;
+}
+
+#timer-control
+{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: cornflowerblue;
+}
+
+#timer-control > *
+{
+    width: 40%;   
+    border-width: 5px;
+    font-size: 5rem;
+    font-family: Share_Tech_Mono;
+    text-align: center;
+}
+
+#spacer
+{
+    width: 5%;
+    border: 1px dashed black;
+}
+
+#SPR
+{
+    border-radius: 10em 0 0 10em;  
+}
+
+*[state="start"] ,*[state="resume"] 
+{
+    background-color: yellowgreen;
+}
+
+*[state="pause"]
+{
+    background-color: orange;
+}
+
+#SR
+{
+    border-radius: 0 10em 10em 0;
+    background-color: rgb(220, 20, 60);
+}
+
+#SR:disabled
+{
+    background-color: rgb(120, 20, 30);
+}
